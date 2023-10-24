@@ -13,7 +13,7 @@ export function Cover() {
     const particlesLoaded = useCallback(async ()=>{}, [])
     return (
         <div id="cover">
-
+            <Particles className="absolute w-full h-full translate-z-0" id="tsparticles" init={particlesInit} loaded={particlesLoaded} options={optionsParticles}/>
         </div>
     )
 }
