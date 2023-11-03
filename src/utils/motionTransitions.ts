@@ -1,4 +1,4 @@
-export const motionsTransitionsPage = {
+export const transitionVariantsPage = {
     initial:{
         x: "100%",
         width: "100%"
@@ -13,7 +13,7 @@ export const motionsTransitionsPage = {
     },
 }
 
-export const notionTransitionsAbout = {
+export const motionTransitionsAbout = {
     initial: {
         opacity:0,
         button: "5rem",

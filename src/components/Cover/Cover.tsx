@@ -4,6 +4,7 @@ import Particles from "react-tsparticles"
 import { loadFull } from "tsparticles"
 import type { Engine } from "tsparticles-engine"
 import { optionsParticles } from "./particleOptions"
+import Introduction from "../Introduction/Introduction"
 
 export function Cover() {
     const particlesInit = useCallback(async (engine:Engine)=>{
@@ -14,6 +15,7 @@ export function Cover() {
     return (
         <div id="cover">
             <Particles className="absolute w-full h-full translate-z-0" id="tsparticles" init={particlesInit} loaded={particlesLoaded} options={optionsParticles}/>
+            <Introduction/>
         </div>
     )
 }
